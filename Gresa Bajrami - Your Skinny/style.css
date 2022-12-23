@@ -1,0 +1,580 @@
+ /* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 64px;
+  color: black;
+}
+
+body {
+  width: 100%;
+}
+
+/* menyja */
+#header {
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgb(228, 225, 225);
+  box-shadow: 0 5px 15px;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(41, 37, 37);
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: rgb(68, 72, 75);
+}
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(49, 46, 46) ;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* butoni shop */
+
+
+#hero{
+  background-image: url("home.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position:top 25% right 0 ;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;  
+}
+
+
+
+#hero h1{
+  color: black;
+}
+
+
+.butoni {
+  width: 100%;
+  height: 18vh;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+ 
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 50px;
+  color: white;
+  /* border: 3px solid rgb(0, 0, 0); */
+  transition: 0.6s ease;
+  animation: animate 2s 1;
+  font-size: 25px;
+  font-weight: 90px;
+  margin-right: 84%;
+  border-radius: 10vh;
+  background-color: #180900e3;
+}
+.btn:hover {
+  background-color: rgb(207, 192, 173);
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* produktet */
+.child {
+  background-color: #dfdcdcd8;
+  width: 250px;
+  height: 409px;
+  border-radius: 15px;
+  top: 70px;
+  left: 100px;
+  display: inline-block;
+  align-items: center;
+  margin-top:30px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+  
+  
+  
+  .child img {
+   width: 150px;
+   position: relative;
+   margin: 40px;
+   padding: 0;
+   margin-left: 50px;
+  }
+
+
+  
+.child h3{
+  padding: 10px;
+  font-family: 'Segoe UI';
+  text-align: left;
+  color: #030303;
+  margin-bottom: 20px;
+}
+
+
+
+  
+.child h2{
+  margin-left: 20px;
+  color:rgb(0, 0, 0);
+  margin: 30px;
+}
+
+h1{
+  
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+#quantity{
+  margin-left: 20px;
+}
+
+
+
+/* teksti Sale */
+#koleksioni {
+  margin-left: 30px;
+
+  
+}
+
+
+
+
+
+
+/* rrethnesh */
+.slider {
+  position: relative;
+  width: 100%;
+
+  height: 100vh;
+}
+.active {
+  opacity: 1;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.not-active {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#image1,
+#image2,
+#image3 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leftarrow {
+  position: relative;
+  top: 60vh;
+  z-index: 1000;
+  width: 20px;
+  height: 35px;
+  left: 20px;
+  cursor: pointer;
+}
+.rightarrow {
+  position: relative;
+  top: 60vh;
+  z-index: 1000;
+  width: 20px;
+  height: 35px;
+  left: 95%;
+  cursor: pointer;
+  color: white;
+}
+#image1 {
+  background-image: url(img/photo1.jpg);
+}
+#image2 {
+  background-image: url(img/photo2.jpg);
+}
+#image3 {
+  background-image: url(img/photo3.jpg);
+}
+
+
+
+
+
+
+/* kontakti */
+
+.container {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+ 
+
+
+/* shigjeta */
+.arrow {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+#arrowpic {
+  width: 50px;
+
+}
+
+
+
+
+/* ikonat */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  background-color: #c5c2c2;
+  position: relative;
+  bottom: 0;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+}
+.footericondiv {
+  width: 100%;  
+  display: flex;
+  justify-content: space-around;
+}
+.footerInformations {
+  width: 300px;
+}
+#footericon {
+  width: 50px;
+  height: 50px;
+}
+.footertextdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footertextdiv p {
+  font-weight: 700;
+}
+@media only screen and (max-device-width: 414px) {
+  .footer {
+    position: relative;
+  }
+}
+
+
+
+/* singup */
+.signupdiv {
+  width: 100%;
+  height: 105vh;
+  display: flex;
+  margin-top: 70px;
+}
+.signupcontent {
+  width: 450px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+.signupcontent h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #5c5a5a;
+}
+.signupcontent input {
+  border: 0px;
+  border-bottom: 2px solid #77797a;
+  width: 450px;
+  height: 30px;
+  margin-top: 45px;
+  outline: none;
+  font-size: 20px;
+}
+
+.email {
+  font-size: 100px;
+}
+.signupbutton {
+  margin-top: 30px;
+  width: 300px;
+  height: 60px;
+  background-color: #797d7e;
+  border-radius: 35px;
+  border: 0px;
+  color: rgb(228, 228, 228);
+  font-size: 15px;
+  outline: none;
+}
+.signup {
+  margin-top: 25px;
+  color: #3d514d;
+  text-align: left;
+  font-size: 13px;
+}
+.signup_form #fullname_error,
+.signup_form #email_error,
+.signup_form #phone_error,
+.signup_form #pass_error {
+  display: flex;
+  opacity: 80%;
+  font-size: 12px;
+  color: #c62828;
+  opacity: 0;
+}
+
+@media only screen and (max-device-width: 414px) {
+  body {
+    width: 100vw;
+  }
+  .header {
+    width: 100vw;
+    height: 100px;
+  }
+  .visibility {
+    display: none;
+  }
+  .booknowbutoni {
+    right: 0;
+    top: 25px;
+  }
+  #logo {
+    margin-left: 10px;
+    width: 65px;
+    height: 50px;
+  }
+  .signupcontent h1 {
+    position: relative;
+    font-size: 45px;
+  }
+  .signupcontent input {
+    width: 350px;
+  }
+  .signupdiv {
+    width: 100vw;
+    height: 80vh;
+  }
+  .signup {
+    width: 75%;
+    margin: 20px auto;
+  }
+  .signup_form #fullname_error,
+  .signup_form #email_error,
+  .signup_form #phone_error,
+  .signup_form #pass_error {
+    margin-left: 50px;
+  }
+  .footerDent {
+    position: relative;
+    background-color: #56768a;
+  }
+}
+
+@media only screen and (max-device-width: 800px) and (min-device-width: 414px) {
+  .signupdiv {
+    height: 80vh;
+    margin-top: 130px;
+  }
+}
+
+
+
+
+
+/* shigjeta posht */
+.arrow {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  
+}
+#arrowpic {
+  width: 30px;
+}
+
+
+h4{
+
+  text-align: center;
+  color: #414242;
+
+}
+
+
+
+/* yjzit */
+
+.stars {
+  color: rgb(0, 0, 0);
+  font-size: 75%;
+  margin-left: 20px;
+}
